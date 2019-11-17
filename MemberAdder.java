@@ -2,6 +2,17 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MemberAdder {
+	
+	/**
+	 * This class includes a function that adds a new member to the array list of members.
+	 * It takes in user inputted data and creates a new member.
+	 * @author Payton Dwyer
+	 */
+	
+	/**
+	 * This function adds a new member to the array list of members.
+	 * @param members is the already existing array list of members that is read in from the file
+	 */
 	public static void AddMemberToList(ArrayList<Member> members) {
 		Scanner sc = new Scanner(System.in);
 		String fullname = "";

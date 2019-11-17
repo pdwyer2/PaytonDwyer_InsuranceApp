@@ -3,6 +3,17 @@ import java.util.ArrayList;
 
 public class InsuranceApp {
 	
+	/**
+	 * This class houses the main body of the program.
+	 * It also includes functions for printing a menu.
+	 * Presents as options for a user to choose from.
+	 * @author Payton Dwyer
+	 */
+	
+	/**
+	 * This function prints stars to the screen.
+	 * @param howMany the number of stars needed
+	 */
 	public static void printStars(int howMany) {
 		String stars = "";
 		for (int i = 0; i < howMany; i++) {
@@ -11,6 +22,10 @@ public class InsuranceApp {
 		System.out.println(stars);
 	}
 	
+	/**
+	 * This function prints a welcome message to the user.
+	 * It calls the printStars function to help format the message.
+	 */
 	public static void welcome() {
 		String space = "               ";
 		String title = "INSURANCE SCORE CARD";
@@ -26,6 +41,11 @@ public class InsuranceApp {
 		printStars(50);
 	}
 	
+	/**
+	 * This function prints the menu for the user to choose from.
+	 * It also asks the user to choose an option from the menu.
+	 */
+	
 	public static void userMenu() {
 		System.out.println("Here are your choices:");
 		System.out.println("       1. List members");
@@ -38,6 +58,13 @@ public class InsuranceApp {
 		System.out.print("Please enter your choice: ");
 		
 	}
+	
+	/**
+	 * Main body of the program that calls welcome function.
+	 * Gets the user to input a file and then reads it.
+	 * Carries out the options specified by the user.
+	 * Prints an exit message when the user is done using the program.
+	 */
 	
 	public static void main(String[] args) {
 		welcome();

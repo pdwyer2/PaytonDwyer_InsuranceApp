@@ -1,5 +1,18 @@
 import java.util.ArrayList;
 public class Assessor {
+	/**
+	 * This class assesses an individual member based on point values.
+	 * It then adds each member to an array list to print a report.
+	 * @author Payton Dwyer
+	 */
+	
+	
+	/**
+	 * This function scores an individual member by accessing information about age, weight, BP, etc.
+	 * It determines a total point value and then delivers a verdict based on those points.
+	 * @param members the array list containing all of the data for each member read in from the file
+	 * @return returns a new array list that contains the name, point total, and verdict for each member assessed. 
+	 */
 	public ArrayList<InsuranceScore> scoreMembers(ArrayList<Member> members) {
 		ArrayList<InsuranceScore> Members = new ArrayList<InsuranceScore>();
 		InsuranceScore mem;

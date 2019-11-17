@@ -3,6 +3,18 @@ import java.util.Scanner;
 import java.io.*;
 import java.beans.XMLDecoder;
 public class MemberReader {
+	
+	/**
+	 * This class includes functions for reading in different file formats such as .txt, .bin, and .xml
+	 * @author Payton Dwyer
+	 */
+	
+	/**
+	 * This function reads in members and their data from a text file.
+	 * For each line in the text file it splits the data at the tabs.
+	 * @param fname is the name of the user inputted text file
+	 * @return it will return an array list containing all of the members from the text file and their data
+	 */
 	public static ArrayList<Member> readMembersFromTextFile(String fname) {
 		ArrayList<Member> result = new ArrayList<Member>();
 		try {
@@ -37,6 +49,11 @@ public class MemberReader {
 			return null;
 		}
 	}
+	/**
+	 * This function reads in member data from a binary file.
+	 * @param fname is the user specified .bin file
+	 * @return it will return an array list of members
+	 */
 	public static ArrayList<Member> readMembersFromBinary(String fname)  {
 		try {
 			ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fname));
@@ -47,6 +64,11 @@ public class MemberReader {
 			return null;
 		}
 	}
+	/**
+	 * This function reads in member data from an xml file.
+	 * @param fname is the user specified .xml file
+	 * @return it will return an array list of members
+	 */
 	public static ArrayList<Member> readMembersFromXML(String fname) {
 		try {
 			XMLDecoder dec = new XMLDecoder(new BufferedInputStream(new

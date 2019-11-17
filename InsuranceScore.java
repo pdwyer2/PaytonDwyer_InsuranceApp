@@ -1,4 +1,12 @@
 public class InsuranceScore {
+	/**
+	 * This class sets up the insurance score for each member.
+	 * An insurance score consists of the member name, point total, and verdict.
+	 * It includes default and non default constructors for an insurance score.
+	 * Also contains a toString function that formats how an assessment will be printed to screen.
+	 * @author Payton Dwyer
+	 */
+	
 	private String firstname;
 	private String lastname;
 	private int finalScore;

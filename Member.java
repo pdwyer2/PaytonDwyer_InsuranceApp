@@ -1,6 +1,15 @@
 import java.util.ArrayList;
 import java.io.Serializable;
 public class Member implements Serializable {
+	
+	/**
+	 * This class sets up a Member that includes a person's name and their data.
+	 * A member consists of a name, height, weight, family diseases, etc.
+	 * It includes default and non default constructors for a Member.
+	 * It also includes two toString functions for formatting members printed to the screen and also a text file.
+	 * @author Payton Dwyer
+	 */
+	
 	String firstname;
 	String lastname;
 	int age;
